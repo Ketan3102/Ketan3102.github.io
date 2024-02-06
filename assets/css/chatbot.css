@@ -189,6 +189,38 @@ header h2 {
     visibility: visible;
 }
 
+.chatbot-toggler{
+    animation: bounceA 3s alternate;
+}
+
+.chatbot-toggler:hover {
+    animation: bounceAni 1s infinite alternate;
+}
+
+@keyframes bounceA {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceAni {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
 @media (max-width: 490px) {
     .chatbot-toggler {
         right: 20px;

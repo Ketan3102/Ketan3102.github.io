@@ -35,6 +35,20 @@
             <span id="send-btn" class="material-symbols-rounded">send</span>
         </div>
     </div>
+    <script>
+        var bounceDiv = document.getElementsByClassName('chatbot-toggler');
 
+        bounceDiv.addEventListener('click', function () {
+            bounceDiv.style.animation = 'none';
+        });
+
+        bounceDiv.addEventListener('mouseenter', function () {
+            bounceDiv.style.animation = 'bounceAni 2s infinite alternate';
+        });
+
+        bounceDiv.addEventListener('mouseleave', function () {
+            bounceDiv.style.animation = 'none';
+        });
+    </script>
 </body>
 </html>
